@@ -4,7 +4,7 @@ export default function App() {
  
 
   return <>
-  //should ultimately contain <CategoriesList />
+  //should ultimately contain the CategoriesList<br />
   HELLO WORLD! test
   </>;
 }
