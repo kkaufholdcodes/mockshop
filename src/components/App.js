@@ -1,7 +1,12 @@
 import React from 'react';
 
-function App() {
-  return <>HELLO WORLD</>;
+export default function App() {
+ 
+
+  return <>
+  //should ultimately contain <CategoriesList />
+  HELLO WORLD! test
+  </>;
 }
 
-export default App;
+
