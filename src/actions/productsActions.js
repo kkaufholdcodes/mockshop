@@ -3,9 +3,13 @@ export const fetchProducts = () => {
 fetch("https://fakestoreapi.com/products")
       .then((res) => res.json())
       .then((data) => {
-        const productsJSON = data;
+        console.log(data);
+        const productCategories = groupBy(data, category);
+        //dispatch the action type and payload
+        console.log(productCategories);
       }
   }
+
 
 /**from Stack overflow:
  * @description
