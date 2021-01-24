@@ -1,11 +1,14 @@
 import React from 'react';
+import { CategoriesList } from "./CategoriesList.react.js";
+import Provider from "react-redux";
 
 export default function App() {
  
 
   return <>
-  //should ultimately contain the CategoriesList<br />
-  HELLO WORLD! test
+  <Provider>
+    <CategoriesList />
+  </Provider>
   </>;
 }
 

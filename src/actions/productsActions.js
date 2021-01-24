@@ -1,7 +1,22 @@
 export const fetchProducts = () => {
-    fetch("https://fakestoreapi.com/products")
+
+fetch("https://fakestoreapi.com/products")
       .then((res) => res.json())
-      .then((data) => 
-        //do something
-      
-  };
+      .then((data) => {
+        const productsJSON = data;
+      }
+  }
+
+  function groupBy(list, keyGetter) {
+    const map = new Map();
+    list.forEach((item) => {
+         const key = keyGetter(item);
+         const collection = map.get(key);
+         if (!collection) {
+             map.set(key, [item]);
+         } else {
+             collection.push(item);
+         }
+    });
+    return map;
+}
