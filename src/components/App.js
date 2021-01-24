@@ -6,9 +6,7 @@ export default function App() {
  
 
   return <>
-  <Provider>
     <CategoriesList />
-  </Provider>
   </>;
 }
 
